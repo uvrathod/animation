@@ -28,15 +28,23 @@
           z-index-2;
      height: 0px;
     width: 0px;
+    right:0;
    
     position: absolute;
     border-left: 55px solid transparent;
     border-bottom: 55px solid green;
     border-right: 55px solid transparent;
-    
+    animation: bottom 6s infinite;
    
 } 
-     
+   @keyframes bottom
+{
+     0% {right:0px;top:6px;}
+      25% {right:0px;top:200px;}
+     50% {right:0px;top:250px;transform:rotate(180deg);}
+     75% {right:0px;top:300px;}
+     100%{right:0px;top:400px;}
+}  
     
      .tri1{
           height:0px;
