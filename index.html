@@ -6,22 +6,24 @@
      width:100px;
      border-radius:50%;
      background-color:red;
-     animation: roll 3s infinite;
+     animation: roll 6s 3;
    }
    
    @keyframes roll
    {
-        0%{ transform:translate3d(0px, 0px, 0px);
+        0%{ left:800px;top:0px;
         animation-timing-function:ease-in;
-        
+   }
+        25%{ left:800px;top:400px;
+        animation-timing-function:ease-in;
    }
         50%{
-        transform:translate3d(500px, 0px, 0px);
+        left:0px;top:400px;
         animation-timing-function:ease-out;
              
         }
-        100%{
-        transform:translate3d(0px, 0px, 0px);
+        100%{left:0px;top:0px;
+        
         }
    }
    
