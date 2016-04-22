@@ -1,13 +1,22 @@
 <html>
 <head>
      <style>
-   div{
+   .circle1{
+        height:80px;
+        width:80px;
+        border-radius:50%;
+        background:blue;
+        position:relative;
+        animation: slide 7s 3 21s;
+   }
+   
+   .circle{
      height:100px;
      width:100px;
      border-radius:50%;
      background-color:red;
      position:relative;
-     animation: roll 6s infinite;
+     animation: roll 7s 3;
    }
    
    @keyframes roll
@@ -34,10 +43,37 @@
         }
    }
    
+    @keyframes slide
+   {
+        0%{ left:0px;top:200px;
+       
+   }
+        25%{ left:400px;top:0px;
+        
+   }
+        50%{
+        left:800px;top:200px;
+       
+             
+        }
+        
+        75%{
+        left:400px;top:400px;
+       
+             
+        }
+        100%{left:0px;top:20px;
+        
+        }
+   }
+   
      </style> 
 </head>
 <body>
-      <div>
+      <div class="circle">
+        
+      </div>
+      <div class="circle1">
         
       </div>
  
