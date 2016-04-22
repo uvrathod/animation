@@ -6,6 +6,23 @@
      width:100px;
      border-radius:50%;
      background-color:red;
+     animation:roll 3s 3 1s;
+   }
+   
+   @keyframes roll
+   {
+        0%{ transform:translate(0px 0px 0px);
+        animation-timing-function:ease-in;
+        
+   }
+        50%{
+        transform:translate(500px 0px 0px);
+        animation-timing-function:ease-out;
+             
+        }
+        100%{
+        transform:translate(0px 0px 0px);
+        }
    }
    
      </style> 
