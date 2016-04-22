@@ -17,13 +17,25 @@
 
 @keyframes right
 {
-     0% {left:7px;top:7px;}
-      25% {left:400px;top:7px;}
-     50% {left:400px;top:7px;transform:rotate(180deg);}
-     75% {left:800px;top:7px;}
-     100%{left:800px;top:7px;}
+     0% {left:7px;top:6px;}
+      25% {left:400px;top:6px;}
+     50% {left:400px;top:6px;transform:rotate(180deg);}
+     75% {left:800px;top:6px;}
+     100%{left:800px;top:6px;}
 }
+    .smalltri1
+     {
+          z-index-2;
+     height: 0px;
+    width: 0px;
+   
+    position: absolute;
+    border-left: 55px solid transparent;
+    border-bottom: 55px solid green;
+    border-right: 55px solid transparent;
     
+    animation: right 6s infinite;
+} 
      
     
      .tri1{
@@ -209,6 +221,9 @@
       </div>
       <div class="circle6">
         
+      </div>
+      <div class="smalltri1">
+           
       </div>
       
  
